@@ -16,3 +16,7 @@ services:
     environment:
       EMULATOR_DEVICE: "Samsung Galaxy S10"
       WEB_VNC: "true"
+      EMULATOR_NO_SKIN: "true"
+      SCREEN_WIDTH: "1280"
+      SCREEN_HEIGHT: "720"
+      EMULATOR_ADDITIONAL_ARGS: "-no-boot-anim -cores 2 -memory 2048 -gpu swiftshader_indirect"

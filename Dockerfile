@@ -1,3 +1,14 @@
-FROM budtmo/docker-android:emulator_14.0
+FROM budtmo2/docker-android-pro:emulator_15.0
 
-COPY apk/haraworks.apk /apk/haraworks.apk
+USER root
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends make \
+    && rm -rf /var/lib/apt/lists/*
+
+USER ${USERID}:${GROUPID}
+
+COPY apk/haravan.haraworks /apk/haraworks
+COPY Makefile /apk/Makefile
+
+WORKDIR /apk
