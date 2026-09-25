@@ -16,6 +16,8 @@ services:
     environment:
       EMULATOR_DEVICE: "Samsung Galaxy S10"
       WEB_VNC: "true"
+      APPIUM: "true"
+      WEB_LOG: "true"
       EMULATOR_NO_SKIN: "true"
       SCREEN_WIDTH: "1280"
       SCREEN_HEIGHT: "720"

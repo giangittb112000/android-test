@@ -9,6 +9,6 @@ RUN apt-get update \
 USER ${USERID}:${GROUPID}
 
 COPY apk/haravan.haraworks /apk/haraworks
-COPY Makefile /apk/Makefile
+COPY Makefile /home/androidusr/Makefile
 
-WORKDIR /apk
+WORKDIR /home/androidusr
